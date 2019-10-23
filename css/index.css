@@ -5,6 +5,9 @@
   font-display: swap;
   src: local('Montserrat Regular'), local('Montserrat-Regular'), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459Wlhzg.ttf) format('truetype');
 }
+.boxin {
+  box-sizing: border-box;
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -142,25 +145,18 @@ body {
   height: 100%;
   width: 100%;
 }
-footer {
-  left: 0;
-  bottom: 0;
-  height: 50px;
-  width: 100%;
-  font-family: 'Montserrat', sans-serif;
-  background-color: #29ABA4;
-  border-radius: 10px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .foundation_nav {
   box-sizing: border-box;
   margin: 20px 0px;
   width: 100%;
   display: flex;
   justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .foundation_nav {
+    background-color: #3A9AD9;
+    margin: 0;
+  }
 }
 .foundation_nav .navbar {
   box-sizing: border-box;
@@ -171,6 +167,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: flex-end;
+}
+@media (max-width: 500px) {
+  .foundation_nav .navbar {
+    width: 100%;
+  }
 }
 .foundation_nav .navbar .links {
   background-color: #354458;
@@ -183,6 +184,8 @@ footer {
   justify-content: space-evenly;
 }
 .foundation_nav .navbar .links a {
+  color: white;
+  text-decoration: none;
   font-family: 'Montserrat', sans-serif;
   box-sizing: border-box;
   border-radius: 50px;
@@ -195,4 +198,96 @@ footer {
 .foundation_nav .navbar .links a:hover {
   background-color: #3A9AD9;
   color: black;
+}
+p,
+h1,
+h2 {
+  font-family: 'Montserrat', sans-serif;
+  color: white;
+}
+header {
+  background-color: #29ABA4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 30px 0px;
+}
+header .main-heading {
+  margin: 20px 0px;
+  width: 100%;
+  background-color: #354458;
+  display: flex;
+  justify-content: center;
+}
+header .main-heading h1 {
+  margin: 20px 0px;
+  font-size: 70px;
+}
+header .mh-text {
+  margin: 20px 0px;
+  width: 100%;
+  background-color: #354458;
+  display: flex;
+  justify-content: center;
+}
+header .mh-text p {
+  margin: 20px;
+}
+section {
+  display: flex;
+  flex-direction: column;
+}
+section .dev_box {
+  margin: 20px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #29ABA4;
+}
+section .dev_box .profile_images {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: #FDFF69;
+  border-radius: 50%;
+  height: 50%;
+  width: 90%;
+}
+section .dev_box .profile_images img {
+  margin: 20px;
+  width: 100%;
+  border-radius: 100%;
+}
+section .dev_box .tasks {
+  border-radius: 50px;
+  height: 50px;
+  width: 250px;
+  background-color: #354458;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .dev_box .tasks h2 {
+  color: white;
+}
+section .dev_box .descriptions {
+  margin: 20px 0px;
+  background-color: #354458;
+}
+section .dev_box .descriptions p {
+  margin: 20px;
+}
+footer {
+  left: 0;
+  bottom: 0;
+  height: 50px;
+  width: 100%;
+  font-family: 'Montserrat', sans-serif;
+  background-color: #29ABA4;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

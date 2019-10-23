@@ -1,0 +1,136 @@
+@import "variables";
+@import "mixins";
+@import "reset";
+@import "global";
+@import "navigation";
+@import "about-page";
+@import "footer";
+
+//All body content
+
+
+p, h1, h2{
+  font-family: @mon-font;
+  color:white;
+}
+
+header{
+  background-color: @our-green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin:30px 0px;
+
+ .main-heading{
+   margin:20px 0px;
+   width:100%;
+   background-color: @dark-blue;
+   display:flex;
+   justify-content: center;
+    
+   h1{
+     margin:20px 0px;
+      font-size:70px;
+    }
+  }// closes main heading
+
+    
+  .mh-text{
+   margin:20px 0px;
+   width:100%;
+   background-color: @dark-blue;
+   display:flex;
+   justify-content: center;
+
+   p{
+    margin:20px;
+   }
+    
+      
+  }//closes mh-text
+}// closes header
+
+
+  section{
+    border:2px solid grey;
+    width:100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    @media @phone{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    }
+    
+    .dev_box{
+      border:2px solid red;
+      height:450px;
+      width:250px;
+      margin:20px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: @our-green;
+
+      @media @phone{
+      width:100%;
+      margin:20px 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: center;
+      background-color: @our-green;
+      }
+
+      
+      .profile_images{
+        margin:20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: @light-fade;
+        border-radius: 50%;
+        
+        img{
+          margin:20px;
+          width:50%;
+          border-radius: 100%;
+      }
+      
+    }//closes profile_images
+    
+    .tasks{
+      border-radius: 50px;
+      height:50px;
+      width:250px;
+      background-color:@dark-blue;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      
+      h2{
+        color:white;
+      }
+    }//closes taks
+      
+    .descriptions{
+      margin:20px;
+      background-color: @dark-blue;
+
+      @media @phone{
+      margin:20px 0px;
+      background-color: @dark-blue;
+      }
+      p{
+        margin:20px;
+      }
+      
+    }//closes descriptions
+
+  }//closes dev_box
+  
+}//closes section
