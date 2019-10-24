@@ -1,3 +1,22 @@
+.generalFont {
+  font-family: "Libre Baskerville", serif;
+  color: #354458;
+}
+.btnFont {
+  font-family: "Libre Baskerville", serif;
+  color: #E0FFFF;
+}
+.parallax {
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+html {
+  height: 100%;
+  background-color: #C9EEFF;
+}
 h1,
 h2,
 h3,
@@ -7,75 +26,167 @@ h6,
 p {
   font-size: 62.5%;
 }
-.generalFont {
+header {
+  text-align: center;
+  padding: 6%;
+}
+header h1 {
+  font-size: 3rem;
   font-family: "Libre Baskerville", serif;
   color: #354458;
+  background-color: #E0FFFF;
+  width: 50%;
+  margin: 4% auto;
+  padding: 2%;
 }
-.btnFont {
-  font-family: "Libre Baskerville", serif;
-  color: #E0FFFF;
-}
-section {
-  display: flex;
-  justify-content: space-around;
-  background-color: #C9EEFF;
-  height: 1000px;
-  padding: 5%;
-}
-section h2 {
+header p {
   font-size: 2rem;
   font-family: "Libre Baskerville", serif;
   color: #354458;
 }
-section p {
-  font-size: 1.2rem;
-  font-family: "Libre Baskerville", serif;
-  color: #354458;
-}
-section .categories {
-  width: 20%;
-  height: 600px;
+section div {
   padding: 2%;
-  border: 1px solid gray;
-  border-radius: 10px;
   text-align: center;
-  background-color: #E0FFFF;
 }
-section .categories img {
-  max-width: 100%;
+section div h3 {
+  font-size: 1.8rem;
 }
-.dropbtn {
+section div h6 {
+  font-size: 1.5rem;
+}
+section div p {
+  font-size: 1.2rem;
+}
+.boxTop {
+  background-color: #fac9b8;
+  background-image: url(../img/twitter.svg);
+  background-repeat: no-repeat;
+  background-size: 30%;
+  background-position: 95% 30%;
+}
+@media (max-width: 500px) {
+  .boxTop {
+    background-size: 70%;
+    background-position: 130% 900%;
+  }
+}
+.boxTop div {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .boxTop div {
+    display: flex;
+    width: 100%;
+    padding-bottom: 20%;
+  }
+}
+.boxBottom {
+  background-color: #29ABA4;
+}
+@media (max-width: 500px) {
+  .boxBottom {
+    padding: 10% 4%;
+  }
+}
+.cta {
+  text-align: center;
+  background-image: url("../img/form.svg");
+  background-repeat: no-repeat;
+}
+@media (max-width: 500px) {
+  .cta {
+    background-image: none;
+  }
+}
+.cta h3 {
+  font-size: 2.5rem;
+}
+@media (max-width: 500px) {
+  .cta h3 {
+    line-height: 50px;
+  }
+}
+.cta p {
+  font-size: 2rem;
+}
+.cta div {
+  background-color: rgba(228, 228, 87, 0.726);
+  padding: 4% 0 4% 50%;
+}
+@media (max-width: 500px) {
+  .cta div {
+    padding: 4% 4% 20% 4%;
+  }
+}
+.cta span {
+  display: block;
+  position: relative;
+  right: 7%;
+  top: -40px;
+}
+@media (max-width: 500px) {
+  .cta span {
+    right: -16%;
+    top: -98px;
+  }
+}
+.cta a {
   background-color: #29ABA4;
   font-family: "Libre Baskerville", serif;
   color: #E0FFFF;
-  padding: 16px;
-  font-size: 1rem;
   border: none;
-}
-.dropdown {
-  position: relative;
-  display: inline-block;
-}
-.drop-content {
-  display: none;
-  position: absolute;
-  background-color: white;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  z-index: 1;
-}
-.drop-content a {
-  color: black;
-  padding: 12px 16px;
+  padding: 2%;
+  border-radius: 10px;
   text-decoration: none;
-  display: block;
 }
-.drop-content a:hover {
-  background-color: #ddd;
+.parallax1 {
+  background-image: url("../img/flamethrower.png");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
-.dropdown:hover .drop-content {
-  display: block;
+@media (max-width: 500px) {
+  .parallax1 {
+    display: none;
+  }
 }
-.dropdown:hover .dropbtn {
-  background-color: #3e8e41;
+.parallax2 {
+  background-image: url("../img/smoking-computer.png");
+  height: 500px;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+@media (max-width: 500px) {
+  .parallax2 {
+    display: none;
+  }
+}
+.navbar {
+  background-color: #354458;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+  margin: 0%;
+}
+.links {
+  display: flex;
+  justify-content: space-evenly;
+  width: 75%;
+  height: 25%;
+}
+footer {
+  background-color: #3A9AD9;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
