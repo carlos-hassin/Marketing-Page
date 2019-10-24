@@ -205,8 +205,7 @@ footer {
   height: 50px;
   width: 100%;
   font-family: 'Montserrat', sans-serif;
-  background-color: #29ABA4;
-  border-radius: 10px;
+  background-color: #354458;
   color: white;
   display: flex;
   justify-content: center;
@@ -247,7 +246,6 @@ header .mh-text p {
   margin: 20px;
 }
 section {
-  border: 2px solid grey;
   width: 100%;
   display: flex;
   flex-wrap: wrap;
@@ -261,9 +259,9 @@ section {
   }
 }
 section .dev_box {
-  border: 2px solid red;
+  border: 5px solid #3A9AD9;
   height: 450px;
-  width: 250px;
+  width: 300px;
   margin: 20px;
   display: flex;
   align-items: center;
@@ -283,23 +281,20 @@ section .dev_box {
   }
 }
 section .dev_box .profile_images {
-  margin: 20px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  background-color: #C9EEFF;
-  border-radius: 50%;
+  margin-top: 20px;
 }
 section .dev_box .profile_images img {
-  margin: 20px;
-  width: 50%;
+  width: 45%;
   border-radius: 100%;
+  border: 10px solid #C9EEFF;
 }
 section .dev_box .tasks {
   border-radius: 50px;
-  height: 50px;
-  width: 250px;
+  margin-top: 20px;
+  height: 10%;
+  width: 80%;
   background-color: #354458;
   display: flex;
   justify-content: center;
