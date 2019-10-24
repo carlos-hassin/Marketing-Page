@@ -58,13 +58,16 @@ header{
     justify-content: center;
 
     @media @phone{
+    .boxin();
     width:100%;
     display: flex;
+    align-items: center;
     flex-direction: column;
     }
     
     .dev_box{
       border:5px solid @lighter-blue;
+      .boxin();
       height:450px;
       width:300px;
       margin:20px;
@@ -75,7 +78,7 @@ header{
       background-color: @our-green;
 
       @media @phone{
-      width:100%;
+      width:80%;
       margin:20px 0px;
       display: flex;
       align-items: center;
